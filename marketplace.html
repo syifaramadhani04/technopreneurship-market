@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetMarket - Jual Beli Hewan Peliharaan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-green-600 text-white sticky top-0 z-50 shadow">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">🐾 PetMarket</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">Tentang</a>
+        <a href="#pets" class="hover:underline">Hewan</a>
+        <a href="#categories" class="hover:underline">Kategori</a>
+        <a href="#testimonials" class="hover:underline">Testimoni</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
+        <a href="#contact" class="hover:underline">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center bg-cover bg-center text-white text-center px-6" style="background-image: url('https://i.pinimg.com/736x/d1/d1/81/d1d18156545ed373db49a08fa9896488.jpg');">
+    <div class="bg-black bg-opacity-50 p-8 rounded">
+      <h2 class="text-4xl font-bold mb-4">Selamat Datang di PetMarket</h2>
+      <p class="text-lg">Tempat terbaik untuk mencari hewan peliharaan kesayanganmu!</p>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="about" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4">Tentang Kami</h2>
+    <p>PetMarket adalah platform jual beli hewan peliharaan yang menghubungkan pecinta hewan dengan penjual terpercaya di seluruh Indonesia.</p>
+  </section>
+
+  <!-- Hewan Tersedia -->
+  <section id="pets" class="py-16 px-6 bg-gray-100">
+    <h2 class="text-3xl font-semibold text-center mb-8">Hewan Tersedia</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white p-4 shadow rounded">
+        <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Anjing Golden Retriever" class="w-full mb-2 h-48 object-cover rounded">
+        <h3 class="font-bold">Anjing Golden Retriever</h3>
+        <p>Rp 2.500.000</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <img src="https://images.unsplash.com/photo-1594643925535-b618fe6ed6d1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kucing Persia" class="w-full mb-2 h-48 object-cover rounded">
+        <h3 class="font-bold">Kucing Persia</h3>
+        <p>Rp 1.800.000</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <img src="https://images.unsplash.com/photo-1663043501785-05d17c625253?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kelinci Holland Lop" class="w-full mb-2 h-48 object-cover rounded">
+        <h3 class="font-bold">Kelinci Holland Lop</h3>
+        <p>Rp 500.000</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <img src="https://images.unsplash.com/photo-1666471301755-ffe9995005c2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bearded Dragon" class="w-full mb-2 h-48 object-cover rounded">
+        <h3 class="font-bold">Bearded Dragon</h3>
+        <p>Rp 1.000.000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kategori -->
+  <section id="categories" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4">Kategori Hewan</h2>
+    <ul class="list-disc pl-6">
+      <li>Anjing</li>
+      <li>Kucing</li>
+      <li>Kelinci</li>
+      <li>Burung</li>
+      <li>Ikan Hias</li>
+      <li>Reptil</li>
+    </ul>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimonials" class="py-16 px-6 bg-gray-100">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Testimoni</h2>
+    <div class="max-w-3xl mx-auto space-y-4">
+      <blockquote class="bg-white p-4 rounded shadow">
+        "Saya beli anjing di sini dan prosesnya cepat dan aman. Terima kasih PetMarket!" — <strong>Dina</strong>
+      </blockquote>
+      <blockquote class="bg-white p-4 rounded shadow">
+        "Platform-nya mudah digunakan, hewan peliharaan sehat dan lucu." — <strong>Rudi</strong>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4">Pertanyaan Umum</h2>
+    <details class="mb-2">
+      <summary class="font-semibold cursor-pointer">Apakah hewan sudah divaksin?</summary>
+      <p class="mt-1">Ya, semua hewan telah divaksinasi dan memiliki sertifikat kesehatan.</p>
+    </details>
+    <details class="mb-2">
+      <summary class="font-semibold cursor-pointer">Bagaimana proses pengiriman?</summary>
+      <p class="mt-1">Kami bekerja sama dengan jasa pengiriman hewan profesional.</p>
+    </details>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="py-16 px-6 bg-green-50">
+    <h2 class="text-3xl font-semibold mb-4 text-center">Hubungi Kami</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Nama Anda" class="w-full p-2 border rounded" required />
+      <input type="email" placeholder="Email Anda" class="w-full p-2 border rounded" required />
+      <textarea placeholder="Pesan Anda" class="w-full p-2 border rounded" rows="4"></textarea>
+      <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white text-center p-4">
+    &copy; 2025 PetMarket. All rights reserved.
+  </footer>
+
+</body>
+</html>
